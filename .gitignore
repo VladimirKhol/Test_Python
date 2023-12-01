@@ -1,0 +1,7 @@
+*.terraform
+/.idea
+.idea/
+venv*
+*.log
+__pycache__/
+settings.py
