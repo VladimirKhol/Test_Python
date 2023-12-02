@@ -31,8 +31,9 @@ async def help_command(update: Update, context: ContextTypes.DEFAULT_TYPE) -> No
 
 async def echo(update: Update, context: ContextTypes.DEFAULT_TYPE) -> None:
     """Echo the user message."""
-    logging.info(update.message.text)
-    await update.message.reply_text(update.message.text)
+    text = update.message.text
+    logging.info(text)
+    await update.message.reply_text(text)
 
 
 def main() -> None:
